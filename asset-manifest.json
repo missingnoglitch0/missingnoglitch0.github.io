@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/missingnoglitch0.github.io/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/missingnoglitch0.github.io/static/js/main.cdb72a0f.chunk.js",
+    "main.js.map": "/missingnoglitch0.github.io/static/js/main.cdb72a0f.chunk.js.map",
+    "runtime-main.js": "/missingnoglitch0.github.io/static/js/runtime-main.5c41cbb1.js",
+    "runtime-main.js.map": "/missingnoglitch0.github.io/static/js/runtime-main.5c41cbb1.js.map",
+    "static/js/2.4f2b6274.chunk.js": "/missingnoglitch0.github.io/static/js/2.4f2b6274.chunk.js",
+    "static/js/2.4f2b6274.chunk.js.map": "/missingnoglitch0.github.io/static/js/2.4f2b6274.chunk.js.map",
+    "static/js/3.f140890b.chunk.js": "/missingnoglitch0.github.io/static/js/3.f140890b.chunk.js",
+    "static/js/3.f140890b.chunk.js.map": "/missingnoglitch0.github.io/static/js/3.f140890b.chunk.js.map",
+    "index.html": "/missingnoglitch0.github.io/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/missingnoglitch0.github.io/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.4f2b6274.chunk.js.LICENSE.txt": "/missingnoglitch0.github.io/static/js/2.4f2b6274.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/missingnoglitch0.github.io/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c41cbb1.js",
+    "static/js/2.4f2b6274.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.cdb72a0f.chunk.js"
+  ]
+}
