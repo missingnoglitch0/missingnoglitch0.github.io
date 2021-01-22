@@ -22,7 +22,7 @@ class Sidebar extends React.Component {
             return (
                 <div className="sidebar-main">
                     <div className="flex-container">
-                        <ShowSidebarButton className="ShowSidebarButton" onClick={this.handleShowSidebarClick} />
+                        <ShowSidebarButton onClick={this.handleShowSidebarClick} />
                         <h1 className="title">
                             {titleName}
                         </h1>
@@ -32,7 +32,7 @@ class Sidebar extends React.Component {
         }
         else {
             return (
-                <ShowSidebarButton onClick={this.handleShowSidebarClick} />
+                    <ShowSidebarButton onClick={this.handleShowSidebarClick} />
             );
         }
     }

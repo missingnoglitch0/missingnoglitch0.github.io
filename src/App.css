@@ -42,7 +42,6 @@
 }
 
 .sidebar-main {
-  position: fixed;
   display: flex;
   flex-direction: row;
   background-color: deeppink;
@@ -60,4 +59,8 @@
 .ShowSidebarButton {
   min-height: 25px;
   height: 25px;
+}
+
+.fixed_pos {
+  position: fixed;
 }
