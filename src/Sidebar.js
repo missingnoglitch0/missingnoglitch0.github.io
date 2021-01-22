@@ -1,4 +1,6 @@
 import React from 'react';
+import './App.css';
+import { VscChevronRight } from 'react-icons/vsc';
 
 class Sidebar extends React.Component {
     constructor(props) {
@@ -20,7 +22,7 @@ class Sidebar extends React.Component {
             return (
                 <div className="sidebar-main">
                     <div className="flex-container">
-                        <ShowSidebarButton onClick={this.handleShowSidebarClick} />
+                        <ShowSidebarButton className="ShowSidebarButton" onClick={this.handleShowSidebarClick} />
                         <h1 className="title">
                             {titleName}
                         </h1>
@@ -38,8 +40,9 @@ class Sidebar extends React.Component {
 
 function ShowSidebarButton(props) {
     return (
-        <button onClick={props.onClick}>
-            S
+        <button className="ShowSidebarButton" onClick={props.onClick}>
+            <VscChevronRight />
+           Click to expand
         </button>
     );
 }

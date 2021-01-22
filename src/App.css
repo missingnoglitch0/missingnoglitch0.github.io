@@ -42,6 +42,7 @@
 }
 
 .sidebar-main {
+  position: fixed;
   display: flex;
   flex-direction: row;
   background-color: deeppink;
@@ -50,11 +51,13 @@
   max-height:fit-content;
 }
 
-.sidebar-main > .title {
-  margin: 10px;
+.title {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20;
 }
 
-.sidebar-main > .showSidebarButton {
-  height: 50px;
-  width: 50px;
+.ShowSidebarButton {
+  min-height: 25px;
+  height: 25px;
 }

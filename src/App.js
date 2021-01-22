@@ -1,6 +1,7 @@
 import './App.css';
 import './Sidebar.js';
 import Sidebar from './Sidebar.js';
+import tallStack from './resources/tall-stack.png';
 
 function App(){
     return (
@@ -9,6 +10,8 @@ function App(){
         <div>
           Portcullis
         </div>
+        <img src={tallStack} alt=""/>
+        bung
       </div>
 
     );
