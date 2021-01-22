@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import { VscChevronRight } from 'react-icons/vsc';
+import { VscChevronDown } from 'react-icons/vsc';
+import { VscChevronUp } from 'react-icons/vsc';
 
 class Sidebar extends React.Component {
     constructor(props) {
@@ -22,7 +23,7 @@ class Sidebar extends React.Component {
             return (
                 <div className="sidebar-main">
                     <div className="flex-container">
-                        <ShowSidebarButton onClick={this.handleShowSidebarClick} />
+                        <SidebarButton_Collapse onClick={this.handleShowSidebarClick} />
                         <h1 className="title">
                             {titleName}
                         </h1>
@@ -32,17 +33,26 @@ class Sidebar extends React.Component {
         }
         else {
             return (
-                    <ShowSidebarButton onClick={this.handleShowSidebarClick} />
+                    <SidebarButton_Expand onClick={this.handleShowSidebarClick} />
             );
         }
     }
 }
 
-function ShowSidebarButton(props) {
+function SidebarButton_Expand(props) {
     return (
         <button className="ShowSidebarButton" onClick={props.onClick}>
-            <VscChevronRight />
+            <VscChevronDown />
            Click to expand
+        </button>
+    );
+}
+
+function SidebarButton_Collapse(props){
+    return (
+        <button className="ShowSidebarButton" onClick={props.onClick}>
+            <VscChevronUp />
+           Click to collapse
         </button>
     );
 }

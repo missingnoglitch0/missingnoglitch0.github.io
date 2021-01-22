@@ -58,6 +58,7 @@
 
 .ShowSidebarButton {
   min-height: 25px;
+  width:max-content;
   height: 25px;
 }
 
