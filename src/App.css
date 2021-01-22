@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.flex-container {
+  display: flex;
+}
+
+.sidebar-main {
+  display: flex;
+  flex-direction: row;
+  background-color: deeppink;
+  width: 200px;
+  height: 500px;
+  max-height:fit-content;
+}
+
+.sidebar-main > .title {
+  margin: 10px;
+}
+
+.sidebar-main > .showSidebarButton {
+  height: 50px;
+  width: 50px;
+}

@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import spencer from './spencer.jpg';
 import './App.css';
+import './Sidebar.js';
+import Sidebar from './Sidebar.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={spencer} className="App-logo" alt="logo" />
-        <p>
-          Ok guys, quick coffee break and then a brief 2-hour stand-up meeting
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
-      </header>
-    </div>
-  );
+function App(){
+    return (
+      <div className="flex-container">
+        <Sidebar titleName="Pepe" isOpen={true} />
+        <div>
+          Portcullis
+        </div>
+      </div>
+
+    );
 }
 
 export default App;
