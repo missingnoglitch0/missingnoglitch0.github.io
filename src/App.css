@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .App-logo {
@@ -41,27 +42,11 @@
   display: flex;
 }
 
-.sidebar-main {
-  display: flex;
-  flex-direction: row;
-  background-color: deeppink;
-  width: 200px;
-  height: 500px;
-  max-height:fit-content;
-}
-
-.title {
-  margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20;
-}
-
-.ShowSidebarButton {
-  min-height: 25px;
-  width:max-content;
-  height: 25px;
+.flex-column {
+  flex-direction: column;
 }
 
 .fixed_pos {
   position: fixed;
 }
+

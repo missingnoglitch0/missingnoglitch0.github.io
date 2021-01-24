@@ -1,60 +1,39 @@
-import React from 'react';
 import './App.css';
-import { VscChevronDown } from 'react-icons/vsc';
-import { VscChevronUp } from 'react-icons/vsc';
+import './NavMenu.css';
+import React from 'react';
+import { VscMenu } from 'react-icons/vsc';
 
-class Sidebar extends React.Component {
-    constructor(props) {
+class Sidebar extends React.Component
+{
+    /* Useless constructor
+    constructor(props)
+    {
         super(props);
-        this.handleShowSidebarClick = this.handleShowSidebarClick.bind(this);
-        this.state = { isOpen: true };
-        this.titleName = props.titleName;
     }
+    */
 
-    handleShowSidebarClick() {
-        this.setState({ isOpen: !this.state.isOpen });
-    }
-
-    render() {
-        const isOpen = this.state.isOpen;
-        const titleName = this.titleName;
-
-        if (isOpen) {
-            return (
-                <div className="sidebar-main">
-                    <div className="flex-container">
-                        <SidebarButton_Collapse onClick={this.handleShowSidebarClick} />
-                        <h1 className="title">
-                            {titleName}
-                        </h1>
-                    </div>
-                </div>
-            );
-        }
-        else {
-            return (
-                    <SidebarButton_Expand onClick={this.handleShowSidebarClick} />
-            );
-        }
+    render()
+    {
+        //we need data on currently displayed page for sidebar content
+        return (
+            <div>
+                <ul className="sidebar">
+                    {/*This is where a list of relevant links should go*/}
+                    <li> 1.1 </li>
+                    <li> 1.2 </li>
+                </ul>
+            </div>
+        );
     }
 }
 
-function SidebarButton_Expand(props) {
+function SidebarButton(props)
+{
     return (
-        <button className="ShowSidebarButton" onClick={props.onClick}>
-            <VscChevronDown />
-           Click to expand
+        <button className="sidebarButton" onClick={props.onClick}>
+            <VscMenu />
         </button>
     );
 }
 
-function SidebarButton_Collapse(props){
-    return (
-        <button className="ShowSidebarButton" onClick={props.onClick}>
-            <VscChevronUp />
-           Click to collapse
-        </button>
-    );
-}
-
-export default Sidebar;
+export { Sidebar, SidebarButton };

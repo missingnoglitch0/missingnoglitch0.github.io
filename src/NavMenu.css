@@ -1,0 +1,29 @@
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+  }
+
+  .navMenu .navBar{
+    display: flex;
+  }
+  
+  .navBar h2{
+    margin:0;
+  }
+
+  .navMenu .sidebar{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
+    background-color: deeppink;
+    max-width: 30vw; /*30% of screen width*/
+    height: 100%;
+    max-height: fit-content;
+  }
+
+  .navMenu .sidebarButton {
+    min-height: 25px;
+    width: max-content;
+  }

@@ -1,17 +1,13 @@
 import './App.css';
 import './Sidebar.js';
-import Sidebar from './Sidebar.js';
+import NavMenu from './NavMenu.js';
 import tallStack from './resources/tall-stack.png';
 
-function App() {
+function App()
+{
   return (
-    <div className="flex-container">
-      <div className="fixed_pos">
-        <Sidebar className="fixed_pos" titleName="Pepe" isOpen={true} />
-      </div>
-      <div>
-        Portcullis
-        </div>
+    <div className="flex-container flex-column">
+      <NavMenu />
       <img src={tallStack} alt="" />
         bung
     </div>
