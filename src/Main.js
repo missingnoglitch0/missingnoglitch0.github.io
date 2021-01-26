@@ -15,7 +15,9 @@ function Main()
                 {/*Sample Route statements for pages
         <Route exact path="/" component={Home}></Route>
         */}
-                <Route path="" component={Giraffe}></Route>
+                <Route path="/Giraffe">
+                    <Giraffe />
+                </Route>
             </Switch>
             poot
         </div>

@@ -1,5 +1,7 @@
+import "./NavMenu.css";
 import React from "react";
-import { Sidebar, SidebarButton } from "./Sidebar.js";
+import Sidebar from "./Sidebar.js";
+import NavBar from "./NavBar.js";
 
 //Contains NavBar and retractable sidebar
 class NavMenu extends React.Component
@@ -8,7 +10,7 @@ class NavMenu extends React.Component
   {
     super(props);
     this.openSidebar = this.openSidebar.bind(this);
-    this.state = { Sidebar_isOpen: false };
+    this.state = { Sidebar_isOpen: false }; //by default, sidebar is closed
   }
 
   openSidebar()
@@ -21,14 +23,9 @@ class NavMenu extends React.Component
     const Sidebar_isOpen = this.state.Sidebar_isOpen;
     return (
       <div className="navMenu">
-        <div className="navBar">
-          <SidebarButton onClick={this.openSidebar} />
-          <h2>
-            Codex
-          </h2>
-        </div>
+        <NavBar sidebarButton_onClick={this.openSidebar} />
         {Sidebar_isOpen &&
-          <Sidebar isOpen={false} />
+          <Sidebar />
         }
       </div>
     );

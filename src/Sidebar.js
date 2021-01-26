@@ -1,17 +1,7 @@
-import './App.css';
-import './NavMenu.css';
 import React from 'react';
-import { VscMenu } from 'react-icons/vsc';
 
 class Sidebar extends React.Component
 {
-    /* Useless constructor
-    constructor(props)
-    {
-        super(props);
-    }
-    */
-
     render()
     {
         //we need data on currently displayed page for sidebar content
@@ -27,13 +17,4 @@ class Sidebar extends React.Component
     }
 }
 
-function SidebarButton(props)
-{
-    return (
-        <button className="sidebarButton" onClick={props.onClick}>
-            <VscMenu />
-        </button>
-    );
-}
-
-export { Sidebar, SidebarButton };
+export default Sidebar;
