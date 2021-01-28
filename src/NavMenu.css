@@ -6,10 +6,15 @@
 
   .navMenu .navBar{
     display: flex;
+    height: 3rem;
   }
   
-  .navBar h2{
-    margin:0;
+  .navBar h1{
+    margin: auto;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.1em;
+    color:black;
   }
 
   .navMenu .sidebar{
@@ -24,6 +29,34 @@
   }
 
   .navMenu .sidebarButton {
-    min-height: 25px;
-    width: max-content;
+    height: 100%;
+    width: 3rem;
+  }
+
+  .navMenu .dropdownButton {
+  }
+
+  .dropdownButton button{
+    height: 100%;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    z-index: 1;
+    width: inherit;
+  }
+
+  .dropdown-content button,
+  .dropdown-content a{
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+  }
+
+  .dropdownButton:hover .dropdown-content{
+    display: block;
+    flex-direction: column;
   }

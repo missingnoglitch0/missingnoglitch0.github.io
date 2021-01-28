@@ -1,6 +1,7 @@
 import React from 'react';
 import { VscMenu } from 'react-icons/vsc';
 import { Link } from 'react-router-dom';
+import DropdownButton from './DropdownButton.js';
 
 class NavBar extends React.Component
 {
@@ -15,22 +16,17 @@ class NavBar extends React.Component
         return (
             <div className="navBar">
                 <SidebarButton onClick={this.sidebarButton_onClick} />
-                <h2>
-                    Codex
-                </h2>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/about">About</Link>
-                        </li>
-                        <li>
-                            <Link to="/Giraffe">Giraffe</Link>
-                        </li>
-                    </ul>
-                </nav>
+                <Link to="/">
+                    <h1>
+                        Codex
+                    </h1>
+                </Link>
+
+                <DropdownButton>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/Giraffe">Giraffe</Link>
+                </DropdownButton>
             </div>
         );
     }

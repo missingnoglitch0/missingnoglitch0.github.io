@@ -10,16 +10,19 @@ import Giraffe from './Giraffe.js';
 function Main()
 {
     return (
-        <div>
-            <Switch> {/*The Switch decides which component to show based on the current URL*/}
+        <div className="main">
+            <Switch>
+                {/*The Switch decides which component to show based 
+                on the current URL*/}
                 {/*Sample Route statements for pages
-        <Route exact path="/" component={Home}></Route>
-        */}
+                <Route exact path="/" component={Home}></Route>*/}
                 <Route path="/Giraffe">
                     <Giraffe />
                 </Route>
+                <Route path="/">
+                    poot
+                </Route>
             </Switch>
-            poot
         </div>
 
     );

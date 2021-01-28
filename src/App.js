@@ -5,7 +5,7 @@ import Main from './Main.js';
 function App()
 {
   return (
-    <div className="flex-container flex-column">
+    <div className="App">
       <NavMenu />
       <Main />
     </div>

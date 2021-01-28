@@ -1,6 +1,14 @@
 .App {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  position: relative;
+  top: 3rem; /*this should be the same as navbar's height, at least*/
+  z-index: -1;
+
 }
 
 .App-logo {
@@ -36,17 +44,5 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.flex-container {
-  display: flex;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.fixed_pos {
-  position: fixed;
 }
 
