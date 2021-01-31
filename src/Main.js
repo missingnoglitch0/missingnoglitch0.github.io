@@ -5,6 +5,8 @@ import { Switch, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 */
 
+//import SamplePage from 'https://github.com/missingnoglitch0/SimplifiedEnglish/blob/main/SamplePage.js';
+
 import Giraffe from './Giraffe.js';
 
 function Main()
@@ -22,6 +24,7 @@ function Main()
                 <Route path="/">
                     poot
                 </Route>
+
             </Switch>
         </div>
 

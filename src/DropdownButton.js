@@ -7,12 +7,21 @@ import React from 'react';
 
 class DropdownButton extends React.Component
 {
+    constructor(props)
+    {
+        super(props);
+        this.buttonText = this.props.buttonText;
+    }
+
     render()
     {
+        const buttonText = this.buttonText;
         return (
             <div className="dropdownButton">
                 <button>
-                    DropdownButton
+                    <h2>
+                        {buttonText}
+                    </h2>
                 </button>
                 <div className="dropdown-content">
                     {this.props.children}

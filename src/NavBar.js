@@ -22,10 +22,11 @@ class NavBar extends React.Component
                     </h1>
                 </Link>
 
-                <DropdownButton>
+                <DropdownButton buttonText="Projects">
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
                     <Link to="/Giraffe">Giraffe</Link>
+                    <Link to="/SimplifiedEnglish"> Simplified English</Link>
                 </DropdownButton>
             </div>
         );

@@ -1,7 +1,7 @@
 {
   "name": "missingnoglitch0.github.io",
   "version": "0.1.0",
-  "homepage": "http://missingnoglitch0.github.io/missingnoglitch0.github.io",
+  "homepage": "http://missingnoglitch0.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
