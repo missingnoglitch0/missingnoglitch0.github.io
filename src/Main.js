@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import SamplePage from './projects/simplified-english/SamplePage.js';
 
 /* Sample import statements
 import Home from '../pages/Home';
@@ -21,9 +22,13 @@ function Main()
                 <Route path="/Giraffe">
                     <Giraffe />
                 </Route>
+                <Route path="/SimplifiedEnglish">
+                    {SamplePage}
+                </Route>
                 <Route path="/">
                     poot
                 </Route>
+
 
             </Switch>
         </div>
